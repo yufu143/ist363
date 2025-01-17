@@ -6,14 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yujia Fu Lab 01</title>
     <style>
+        @media only screen and (max-width: 600px) 
+            {
+                .flex-container {
+                    flex-direction: column;
+                }
+            }
+        .info {display: flex;
+            justify-content: space-between;
+        }   
         h1 {color: #0a3981;}
         /* {color: #D4EBF8;} */
     </style>
 </head>
 
 <body>
-   <h1>Yujia Fu</h1>
-   <p>One <span style="color: #E38E49;">personal</span> thing about me is I've been trying to get more into gaming; I'm currently playing Disco Elysium and Deltarune. For <span style="color: #E38E49;">professional</span> things, I am an IM&T major with a concentration in Web Design and Management. Something <span style="color: #E38E49;">peculiar</span> about me is I apparently used to be very extroverted but then, very suddenly and randomly, just wasn't anymore.</p>
+    <div class="info">    
+        <h1>Yujia Fu</h1>
+        <p>One <span style="color: #E38E49;">personal</span> thing about me is I've been trying to get more into gaming; I'm currently playing Disco Elysium and Deltarune. For <span style="color: #E38E49;">professional</span> things, I am an IM&T major with a concentration in Web Design and Management. Something <span style="color: #E38E49;">peculiar</span> about me is I apparently used to be very extroverted but then, very suddenly and randomly, just wasn't anymore.</p>
+    </div>
 </body>
 
 </html>
