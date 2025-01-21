@@ -21,8 +21,15 @@
         }
         .otto {
             position: absolute;
-            left: -100px;
+            left: -200px;
+            animation-name: scoot;
+            animation-duration: 3s;
         }
+        @keyframes scoot {
+            from {transform: translateX(-200px)}
+            to {transform: translateX(500px);}
+        }
+        
     </style>
 </head>
 <body>
