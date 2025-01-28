@@ -46,13 +46,24 @@
         .info {
             margin: 5% 5px;
         }
+        .name {
+            position: absolute;
+            left: -200px;
+            animation-name: scoot;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes scoot {
+            from {transform: translateX(-200px);}
+            to {transform: translateX(3000px);}
+        }
     </style>
 </head>
 
 <body>
     <main class="box">
         <div class="info">    
-            <h1>Yujia Fu</h1>
+            <h1 class="name">Yujia Fu</h1>
             <p>One <strong>personal</strong> thing about me is I've been trying to get more into gaming; I'm currently playing Disco Elysium and Deltarune. For <strong>professional</strong> things, I am an IM&T major with a concentration in Web Design and Management. Something <strong>peculiar</strong> about me is I apparently used to be very extroverted but then, very suddenly and randomly, just wasn't anymore.</p>
             <div class="pics">
                 <div class="row">
