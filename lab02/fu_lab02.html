@@ -46,7 +46,17 @@
         .info {
             margin: 5% 5px;
         }
-        
+        .name {
+            position: absolute;
+            height: 1000px;
+            animation-name: move;
+            animation-duration: 7s;
+            transform: scale(2);
+        }
+        @keyframes move {
+            0% {transform: translateX(-200px)}
+            100% {transform: translateX(3000px);}
+        }
     </style>
 </head>
 
