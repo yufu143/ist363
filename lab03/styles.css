@@ -9,6 +9,13 @@ orange - #e89b6a
 melon - #e2625c
 
 */
+header {
+    background-color: #e89b6a;
+}
+
+nav {
+    background-color: #e89b6a;
+}
 
 nav::after {
     text-decoration: none;
