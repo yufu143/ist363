@@ -10,3 +10,12 @@ melon - #e2625c
 
 */
 
+nav::after {
+    text-decoration: none;
+    color: #7368ba;
+}
+
+nav::after:hover {
+    width: 100%;
+}
+
