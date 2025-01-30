@@ -1,0 +1,22 @@
+
+$heading_color: #00ff00;
+$body_font: Arial, Helvetica, sans-serif;
+
+@mixin feature {
+    border: 1px solid blue;
+    background-color: gray;
+}
+
+body {
+    font-family: $body_font;
+}
+
+h1 {
+    color: $heading_color;
+}
+
+.box {
+    @include feature;
+    color: purple;
+}
+

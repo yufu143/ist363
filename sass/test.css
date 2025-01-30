@@ -1,0 +1,13 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: #00ff00;
+}
+
+.box {
+  border: 1px solid blue;
+  background-color: gray;
+  color: purple;
+}/*# sourceMappingURL=test.css.map */
