@@ -11,10 +11,12 @@ melon - #e2625c
 */
 header {
     background-color: #e89b6a;
+    text-align: center;
 }
 
 nav {
     background-color: #e89b6a;
+    text-align: center;
 }
 
 nav::after {
