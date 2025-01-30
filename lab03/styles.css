@@ -12,11 +12,13 @@ melon - #e2625c
 header {
     background-color: #e89b6a;
     text-align: center;
+    padding: 20px;
 }
 
 nav {
     background-color: #e89b6a;
     text-align: center;
+    padding: 15px;
 }
 
 nav::after {
