@@ -13,7 +13,13 @@
     <script>
         // dog years
         let dogAge = 14;
-        let petAge = dogAge * 7;
+        let type = "dog";
+        let petAge;
+        if (type == dog) {
+            let petAge = dogAge * 7;
+        } else if (type == cat) {
+            let petAge = dogAge * 4;
+        }
         console.log(petAge);
     </script>
     
