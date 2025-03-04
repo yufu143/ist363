@@ -52,7 +52,14 @@
         }
 
         // getting element value from a form
-        console.log(document.getElementById("myForm").elements[0]);
+        console.log(document.getElementById("myForm").elements[0].value);
+
+        // changing text and HTML in tags
+        document.getElementById('pone').innerHTML = 'four';
+        // change form value
+        document.getElementById("myForm").elements[0].value = 'Amanda';
+
+
 
     </script>
 </body>
