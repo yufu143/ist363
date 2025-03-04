@@ -6,6 +6,12 @@
     <title>Javascript Week 2</title>
 </head>
 <body>
+
+    <p id="pone">one</p>
+    <p>two</p>
+    <p>three</p>
+
+
     <script>
         // Dog Years Function
         function dogYears(years) {
@@ -14,12 +20,17 @@
             return (years * 7);
         }
 
+        // console.log(dogYears(14))
         let value = dogYears(10);
         console.log(value);
 
-        //Example:
+        // Example:
         let peopleAge = dogYears(14);
         console.log(peopleAge)
+
+        // pick smth by id and console login
+        let picked = document.getElementById('pone');
+        console.log(picked);
 
     </script>
 </body>
