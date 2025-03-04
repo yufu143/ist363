@@ -12,9 +12,12 @@
             padding: 10px;
             border-radius: 2em;
             box-shadow: 10px 10px 10px 8px #888888;;
+            text-align: center;
+            background-color: aliceblue;
         }
         .calcbox {
             display: flex;
+            text-align: center;
         } 
     </style>
 </head>
@@ -107,7 +110,7 @@
         document.getElementById('myButton').addEventListener("click", myCalculator);
 
         function myCalculator () {
-            
+            document.getElementById('dysubmit').innerText = "Your dog is " + dogYears + " years old!";
         }
 
 
