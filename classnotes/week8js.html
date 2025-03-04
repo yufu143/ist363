@@ -8,11 +8,13 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
-        .calcbox {
-            display: flex;
+        .paract {
             padding: 10px;
             border-radius: 2em;
             box-shadow: 10px 10px 10px 8px #888888;;
+        }
+        .calcbox {
+            display: flex;
         } 
     </style>
 </head>
@@ -34,15 +36,14 @@
         </p>    
 
     <!-- Participation Activity -->
-    <div class="calcbox">
+    <div class="paract">
         <h1> Dog Age to Dog Years Calculator </h1>
-        <form id="myCalc">
-            <p>Enter your dog's age (in human years):</p>
-            <input type="text" name="dogAge" value="">
-            <input type="submit" value="Calculate">
-        </form>
+            <div class="calcbox">
+                <form id="myCalc">
+                    <p>Enter your dog's age (in human years):</p> <input type="text" name="dogAge" value=""> <input type="submit" value="Calculate">
+                </form>
+            </div>
     </div>
-
 
     <!-- CLASSWORK -->
     <script>
