@@ -7,6 +7,11 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
+        }
+        .calcbox {
+            display: flex inline-flex;
+            max-width: 800px;
+            max-height: 30px;
         } 
     </style>
 </head>
@@ -29,13 +34,12 @@
 
     <!-- Participation Activity -->
     <h1> Dog Age to Dog Years Calculator </h1>
-    <div>
+    <div class="calcbox">
         <form id="myCalc">
             <p>Enter your dog's age (in human years):</p>
             <input type="text" name="dogAge" value="">
             <input type="submit" value="Calculate">
         </form>
-        <p></p>
     </div>
 
 
