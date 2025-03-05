@@ -17,8 +17,6 @@
         }
         .calcbox {
             display: flex;
-            width: 100%;
-            margin: 0 auto;
         }
         #myCalc {
             text-align: center;
@@ -96,7 +94,7 @@
         // change a style
         document.getElementById('pone').style.color = 'orange';
         document.getElementById('pone').style.textDecoration = 'underline';
-        document.getElementsByTagName('body')[0].style.backgroundColor = 'yellow';
+        ////////document.getElementsByTagName('body')[0].style.backgroundColor = 'yellow';
 
         document.getElementById('myButton').addEventListener("click", myFunction);
 
@@ -108,13 +106,10 @@
 
     <!-- Participation Activity -->
     <script>
-        document.getElementById('pone').innerHTML = 'four';
-        document.getElementsByTagName('body')[0].style.backgroundColor = 'yellow';
-
-        document.getElementById('myButton').addEventListener("click", myCalculator);
+        document.getElementById('submitAge').addEventListener("click", myCalculator);
 
         function myCalculator () {
-            document.getElementById('dysubmit').innerText = "Your dog is " + dogYears + " years old!";
+            document.getElementById('dysubmit').innerText = "Your dog is " + dogYears + " dog years old!";
         }
 
 
