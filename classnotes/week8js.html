@@ -18,9 +18,6 @@
         .calcbox {
             display: flex;
         }
-        #myCalc {
-            text-align: center;
-        } 
     </style>
 </head>
 <body>
@@ -40,17 +37,21 @@
             <button id="myButton">Sign Up</button>
         </p>    
 
+        
     <!-- Participation Activity -->
     <div class="paract">
         <h1> Dog Age to Dog Years Calculator </h1>
             <div class="calcbox">
                 <form id="myCalc">
-                    <p>Enter your dog's age (in human years):</p> 
+                    <p>Enter your dog's age (in human years): </p> 
                     <input type="text" name="dogAge" value=""> 
-                    <input type="submit" value="Calculate">
                 </form>
+                <p>
+                    <button id="calc">Calculate</button>
+                </p>
             </div>
     </div>
+
 
     <!-- CLASSWORK -->
     <script>
@@ -109,6 +110,7 @@
     <!-- Participation Activity -->
     <script>
         document.getElementById('submitAge').addEventListener("click", myCalculator);
+
 
         function myCalculator () {
             document.getElementById('dysubmit').innerText = "Your dog is " + dogYears + " dog years old!";
