@@ -30,14 +30,14 @@
 
         <form id="myForm">
             <input type="text" name="fname" value="Yujia">
-            <input type="text" name="fname" value="Fu">
+            <input type="text" name="lname" value="Fu">
             <input type="submit" value="send form">
         </form>
         <p>
             <button id="myButton">Sign Up</button>
         </p>    
 
-        
+
     <!-- Participation Activity -->
     <div class="paract">
         <h1> Dog Age to Dog Years Calculator </h1>
@@ -47,7 +47,7 @@
                     <input type="text" name="dogAge" value=""> 
                 </form>
                 <p>
-                    <button id="calc">Calculate</button>
+                    <button id="calc" class="calc">Calculate</button>
                 </p>
             </div>
     </div>
@@ -63,8 +63,8 @@
         }
 
         // console.log(dogYears(14))
-        let value = dogYears(10);
-        console.log(value);
+        //////let value = dogYears(10);
+        //////console.log(value);
 
         // Example:
         let peopleAge = dogYears(14);
@@ -109,13 +109,13 @@
 
     <!-- Participation Activity -->
     <script>
-        document.getElementById('submitAge').addEventListener("click", myCalculator);
-
+        document.getElementsByClassName('calc')[0].addEventListener("click", myCalculator);
+        let dogsYears = document.getElementsByClassName('calc')[0].value
 
         function myCalculator () {
-            document.getElementById('dysubmit').innerText = "Your dog is " + dogYears + " dog years old!";
+            let dogOld = document.getElementById('dysubmit').innerText = "Your dog is " + dogsYears + " dog years old!";
+            console.log(dogOld)
         }
-
 
     </script>
 </body>
