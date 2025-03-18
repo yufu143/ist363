@@ -15,9 +15,9 @@
 
         // STEP 2 - Check the Status of Request
         request.addEventListener('readystatechange', () => {   // listening for request complete
-            if (request.readyState === 4 && request.status === 200) {
-                console.log(request, request.responseText);
-            } else if (request.readyState === 4) {
+            if (request.readyState === 4 && request.status === 200) {   // if request is complete (4) and data loaded (200) 
+                console.log(request, request.responseText);             // log what came back 
+            } else if (request.readyState === 4) {                      // if finished and didn't get status 200
                 console.log('Could not get data');
             }
             //console.log(request, request.readyState);
