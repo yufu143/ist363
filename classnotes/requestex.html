@@ -6,8 +6,10 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Our First Request</h1>
+    <div id="data"></div>
+
     <script>
-        
         // STEP 4 - Use Data
         function reportResults (response) {
             let browserData = 'NA'; 
@@ -16,11 +18,12 @@
                 const myData = JSON.parse(response);    // changes text to arrays and object
                 //console.log(myData);
                 for (i=0; i< myData.length; i++) {
-                    console.log(myData[i].title);
+                    //console.log(myData[i].title);
+                    browserData = browserData + myData[i].title;
                 }
             }
+            document.getElementById('data').innerHTML = browserData;
         }
-
 
         endpoint = 'https://jsonplaceholder.typicode.com/todos/';
 
