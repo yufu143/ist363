@@ -7,6 +7,14 @@
 </head>
 <body>
     <script>
+        
+        // STEP 4 - Use Data
+        function reportResults (response) {
+            let browserData = 'NA'; 
+            console.log(response);
+        }
+
+
         endpoint = 'https://jsonplaceholder.typicode.com/todos/';
 
         // STEP 1 - Make a Request Object
@@ -16,9 +24,10 @@
         // STEP 2 - Check the Status of Request
         request.addEventListener('readystatechange', () => {   // listening for request complete
             if (request.readyState === 4 && request.status === 200) {   // if request is complete (4) and data loaded (200) 
-                console.log(request, request.responseText);             // log what came back 
+                //console.log(request, request.responseText);             // log what came back
+                reportResults(request.responseText); 
             } else if (request.readyState === 4) {                      // if finished and didn't get status 200
-                console.log('Could not get data');
+                console.log('Could not get data!');
             }
             //console.log(request, request.readyState);
         })
@@ -27,10 +36,7 @@
         // STEP 3 - Open Endpoint and Send Request
         request.open('GET', endpoint);         // sets up kind of request and endpoint
         request.send();                        // actually getting data
-
-        // STEP 4 - Use Data
         
-
 
 
     </script>
