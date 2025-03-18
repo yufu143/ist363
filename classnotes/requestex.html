@@ -7,10 +7,12 @@
 </head>
 <body>
     <script>
+        endpoint = 'https://jsonplaceholder.typicode.com/todos/';
+
         // STEP 1 - Make a Request Object
         const request = new XMLHttpRequest();   // Makes an object to make request
 
-        
+
         // STEP 2 - Check the Status of Request
         request.addEventListener('readystatechange', () => {   // listening for request complete
             console.log(request, request.readyState);
