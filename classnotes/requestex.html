@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JS Week 3 Request</title>
 </head>
 <body>
     <h1>Our First Request</h1>
@@ -12,14 +12,14 @@
     <script>
         // STEP 4 - Use Data
         function reportResults (response) {
-            let browserData = 'NA'; 
+            let browserData = ''; 
             //console.log(response);
             if (response != 'error') {
                 const myData = JSON.parse(response);    // changes text to arrays and object
                 //console.log(myData);
-                for (i=0; i< myData.length; i++) {
+                for (i=0; i< myData.length; i++) {      // looping JSON parsed array 
                     //console.log(myData[i].title);
-                    browserData = browserData + myData[i].title + '<br>';
+                    browserData = browserData + myData[i].title + '<br>';   // adding to the variable 
                 }
             }
             document.getElementById('data').innerHTML = browserData;
