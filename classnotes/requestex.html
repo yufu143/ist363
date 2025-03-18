@@ -10,13 +10,16 @@
         // STEP 1 - Make a Request Object
         const request = new XMLHttpRequest();   // Makes an object to make request
 
+        
         // STEP 2 - Check the Status of Request
-        request.addEventListener('readystatechange')
+        request.addEventListener('readystatechange', () => {   // listening for request complete
+            console.log(request, request.readyState);
+        })
 
 
         // STEP 3 - Open Endpoint and Send Request
-        o
-
+        request.open('GET', endpoint);         // sets up kind of request and endpoint
+        request.send();                        // actually getting data
 
         // STEP 4 - Use Data
         o
