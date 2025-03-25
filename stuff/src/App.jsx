@@ -9,6 +9,7 @@ const myLocalVariable = "I'm local :-(";
       <h1>Hello World</h1>
       <p>{myGlobalVariable}</p>
       <p>{myLocalVariable}</p>
+      <p>separate<br /> lines with br tag that needs a trailing slash</p>
     </div>
   );
 }
