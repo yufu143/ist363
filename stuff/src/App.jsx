@@ -8,6 +8,7 @@ const myLocalVariable = "I'm local :-(";
   return (
     <div>
       <h1>Hello World</h1>
+      <p>{myGlobalVariable}</p>
     </div>
   );
 }
