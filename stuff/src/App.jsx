@@ -8,7 +8,7 @@ const Hello2 = () => {
 }
 
 // arrow function concise
-const Hello3 = () => { <div><h1>Hello3</h1></div> }
+const Hello3 = () => ( <div><h1>Hello3</h1></div> )
 
 function App() {
   return (
