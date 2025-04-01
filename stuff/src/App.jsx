@@ -12,7 +12,7 @@ function App() {
     <div>
       <h1>Hello World</h1>
       {name}
-      <button onClick="handleClick">Update</button>
+      <button onClick={handleClick}>Update</button>
     </div>
   );
 }
