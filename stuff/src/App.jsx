@@ -10,6 +10,16 @@ let handleClick = () => {
 }
 
   return (
+    <div className="home">
+      <h1>Hello World</h1>
+      <p>{name}</p>
+      <button onClick={handleClick}>Update</button>
+    </div>
+  );
+}
+
+/*
+  return (
     <div>
       <h1>Hello World</h1>
       {name}
@@ -17,6 +27,7 @@ let handleClick = () => {
     </div>
   );
 }
+*/
 
 /*
 function App() {
