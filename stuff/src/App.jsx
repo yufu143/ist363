@@ -4,6 +4,8 @@ function App() {
   
   const handleClick = () => {
     name = "Amanda"
+    // check to show this function runs
+    console.log(name);
   }
   
   return (
