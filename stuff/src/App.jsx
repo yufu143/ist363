@@ -3,6 +3,8 @@ function App() {
   const handleChange = (event) => {
     // whole event 
     console.log(event);
+    // value of the typing
+    console.log(event.target.value);
   }
   return (
     <div>
