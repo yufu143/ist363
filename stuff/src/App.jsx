@@ -1,15 +1,16 @@
 
 function App() {
-  const handleChange = (event) => {
-    // whole event 
-    console.log(event);
-    // value of the typing
-    console.log(event.target.value);
+  let name = "Yujia";
+  
+  const handleClick = () => {
+    name = "Amanda"
   }
+  
   return (
     <div>
-      <label htmlFor="search">Search:</label>
-      <input id="search" type="text" onChange={handleChange} />
+      <h1>Hello World</h1>
+      {name}
+      <button onClick="handleClick">Update</button>
     </div>
   );
 }
