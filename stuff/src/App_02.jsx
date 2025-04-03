@@ -1,9 +1,8 @@
-
 function App() {
   const handleChange = (event) => {
     // whole event 
     console.log(event);
-    // value of the typing
+    // value of the typing (here: input HTML element)
     console.log(event.target.value);
   }
   return (
