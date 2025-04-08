@@ -16,9 +16,13 @@ function Home () {
   );
 }
 
+// conditional rendering aka navigation SPAs
 function App () {
   return (
     <>
+      <button onClick={() => setPage('home')}>Home</button>
+      <button onClick={() => setPage('about')}>About</button>
+      <button>About</button>
       <h1>Hello World</h1>
     </>
   );
