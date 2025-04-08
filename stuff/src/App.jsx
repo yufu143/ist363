@@ -18,6 +18,7 @@ function Home () {
 
 // conditional rendering aka navigation SPAs
 function App () {
+  const [page, setPage] = useState('home');
   return (
     <>
       <button onClick={() => setPage('home')}>Home</button>
