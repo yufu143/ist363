@@ -8,7 +8,7 @@ function About () {
   );
 }
 
-function About () {
+function Home () {
   return (
     <div>
       <h1>Home Page</h1>
