@@ -1,5 +1,13 @@
 import { useState } from "react";
 
+// NEW: Modularize our search -> takes a callback handler as a prop
+const Search = () => (
+  <div>
+    <label htmlFor="search">Search: </label>
+    <input id="search" type="text" onChange={handleChange} />
+  </div>
+);
+
 const List = () => (
   <ul>
     {props.list.map((item) => (
