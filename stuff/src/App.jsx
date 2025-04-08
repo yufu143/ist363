@@ -1,10 +1,11 @@
 import { useState } from "react";
 
 // NEW: Modularize our search -> takes a callback handler as a prop
-const Search = () => (
+const Search = ({ onSearch }) => (
   <div>
     <label htmlFor="search">Search: </label>
-    <input id="search" type="text" onChange={handleChange} />
+    {/* onSearch prop is the passed function to handle the change */}
+    <input id="search" type="text" onChange={onSearch} />
   </div>
 );
 
@@ -26,7 +27,8 @@ const students = [
 ];
 
 let [filteredStudents, setFilteredStudents] = useState(students);
-   
+
+// This handler function stays here because state lives in App
   const handleChange = (event) => {
     setFilteredStudents(
       students.filter(student => 
@@ -36,6 +38,8 @@ let [filteredStudents, setFilteredStudents] = useState(students);
   
   return (
   <div>
+    {/* NEW: Pass the handler function down to Search component as a prop */}
+    <Search onSearch={handleChange} />
     <label htmlFor="search">Search: </label>
     <input id="search" type="text" onChange={handleChange} />
     <h1>Students</h1>
