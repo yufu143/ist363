@@ -31,19 +31,7 @@ let [filteredStudents, setFilteredStudents] = useState(students);
     <label htmlFor="search">Search: </label>
     <input id="search" type="text" onChange={handleChange} />
     <h1>Students</h1>
-    <ul>
-  {filteredStudents.map(function (item) {
-    return (
-      <li key={item.suid}>
-        Name: {item.name}
-        <br />
-        Year: {item.year}
-        <br />
-        Major: {item.major}
-      </li>
-    );
-  })}
-</ul>
+    
   </div>
       );
     };  
