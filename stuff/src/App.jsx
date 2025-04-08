@@ -1,4 +1,5 @@
 import { useState } from "react";
+import About from './About';
 
 function About () {
   return (
@@ -23,8 +24,12 @@ function App () {
     <>
       <button onClick={() => setPage('home')}>Home</button>
       <button onClick={() => setPage('about')}>About</button>
-      <button>About</button>
-      <h1>Hello World</h1>
+      {/* 
+        <button>About</button>
+        <h1>Hello World</h1>
+      */}
+      {page === 'home' && <Home />}
+      {page === 'about' && <About />}
     </>
   );
 }
