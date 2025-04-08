@@ -1,52 +1,27 @@
 import { useState } from "react";
 
-// NEW: Modularize our search -> takes a callback handler as a prop
-const Search = ({ onSearch }) => (
-  <div>
-    <label htmlFor="search">Search: </label>
-    {/* onSearch prop is the passed function to handle the change */}
-    <input id="search" type="text" onChange={onSearch} />
-  </div>
-);
-
-const List = () => (
-  <ul>
-    {props.list.map((item) => (
-      <li key={item.suid}>{item.name} {item.year} {item.major}</li>
-    ))}
-  </ul>
-);
-
-function App() {
-
-  // moved out of the global scene
-const students = [
-  {suid: 123456, name: 'Sue Flay', year: 'senior', major: 'Applied Data Analytics'}, 
-  {suid: 234567, name: 'Ella Vader', year: 'junior', major: 'Information Management and Technology'}, 
-  {suid: 345678, name: 'Chris P Bacon', year: 'junior', major: 'Innovation, Society and Technology'}
-];
-
-let [filteredStudents, setFilteredStudents] = useState(students);
-
-// This handler function stays here because state lives in App
-  const handleChange = (event) => {
-    setFilteredStudents(
-      students.filter(student => 
-        student.name.toLowerCase().includes(event.target.value.toLowerCase())
-      )
-    );}
-  
+function About () {
   return (
-  <div>
-    {/* NEW: Pass the handler function down to Search component as a prop */}
-    <Search onSearch={handleChange} />
-    <label htmlFor="search">Search: </label>
-    <input id="search" type="text" onChange={handleChange} />
-    <h1>Students</h1>
-    {/* passing the students object to the list component */}
-    <List list={filteredStudents} />
-  </div>
-      );
-    };  
+    <div>
+      <h1>About Page</h1>
+    </div>
+  );
+}
+
+function About () {
+  return (
+    <div>
+      <h1>Home Page</h1>
+    </div>
+  );
+}
+
+function App () {
+  return (
+    <>
+      <h1>Hello World</h1>
+    </>
+  );
+}
 
 export default App;
