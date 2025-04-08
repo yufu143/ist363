@@ -1,7 +1,16 @@
 import { useState } from "react";
 
+const List = () => (
+  <ul>
+    {props.list.map((item) => (
+      <li key={item.suid}>{item.name} {item.year} {item.major}</li>
+    ))}
+  </ul>
+);
+
 function App() {
 
+  // moved out of the global scene
 const students = [
   {suid: 123456, name: 'Sue Flay', year: 'senior', major: 'Applied Data Analytics'}, 
   {suid: 234567, name: 'Ella Vader', year: 'junior', major: 'Information Management and Technology'}, 
