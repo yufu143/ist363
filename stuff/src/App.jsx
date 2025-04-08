@@ -31,7 +31,7 @@ let [filteredStudents, setFilteredStudents] = useState(students);
     <label htmlFor="search">Search: </label>
     <input id="search" type="text" onChange={handleChange} />
     <h1>Students</h1>
-    
+    {/* passing the students object to the list component */}
   </div>
       );
     };  
