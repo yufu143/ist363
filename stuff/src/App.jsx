@@ -1,5 +1,6 @@
 import { useState } from "react";
 import About from './About';
+// ./ means same folder as the App.jsx file
 
 function About () {
   return (
